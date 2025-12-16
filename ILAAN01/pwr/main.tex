@@ -1,0 +1,146 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{polski}
+\usetheme[lang=pl,hr=true]{NewPwr}
+\author{Piotr Łukasiewicz}
+\title{Moja pierwsza prezentacja}
+\subtitle{ILAAN01}
+\institute{Politechnika Wrocławska}
+\date{\today}  % automatycznie wstawi datę kompilacji
+\begin{document}
+\begin{frame} % Slajd tytułowy
+ \maketitle
+\end{frame}
+
+%Przeźrocze techniczne
+
+\begin{frame}{Zaliczenie zadania}
+    \textbf{Link do repozytorium ze źródłami:}
+    \begin{center}
+        \url{https://github.com/CptLama/ilaan01-piotrl.git}
+    \end{center}
+    
+\vspace{0.5cm}
+
+    \textbf{Wykorzystane elementy:}
+\begin{itemize}
+        \item Wykorzystanie dedykowanego stylu \texttt{NewPwr}.
+        \item Podział treści na sekcje (Plan prezentacji).
+        \item Środowisko \texttt{enumerate} (Cykl rozkazowy).
+        \item Tabela porównawcza (Analogia do kuchni).
+        \item Podział slajdu na kolumny (\texttt{columns}).
+    \end{itemize}
+\end{frame}
+
+%Plan prezentacji
+
+\begin{frame}{Plan prezentacji}
+    \tableofcontents
+\end{frame}
+
+%Co to jest Cpu
+
+\section{Definicja CPU}
+
+\begin{frame}{Co to jest CPU?}
+    \begin{block}{Central Processing Unit}
+        CPU (procesor) to \textbf{mózg komputera}. Jest to główny układ scalony odpowiedzialny za wykonywanie instrukcji i obliczeń.
+    \end{block}
+
+    \vspace{0.5cm}
+    Kiedy działa procesor?
+    \begin{itemize}
+        \item Gdy klikasz myszką.
+        \item Gdy otwierasz przeglądarkę.
+        \item Gdy oglądasz filmy na YouTube.
+    \end{itemize}
+    
+    Każda z tych czynności to dla procesora miliardy prostych poleceń do przetworzenia.
+\end{frame}
+
+%Cykl rozkazowy procesora
+
+\section{Cykl pracy (Rozkazy)}
+
+\begin{frame}{Cykl rozkazowy procesora}
+    Procesor działa w niekończącej się pętli, wykonując 4 podstawowe kroki miliardy razy na sekundę:
+
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Pobieranie (Fetch):} \\
+        Pobranie instrukcji z pamięci RAM.
+        
+        \item \textbf{Dekodowanie (Decode):} \\
+        Rozszyfrowanie co należy zrobić (np. "dodaj X do Y").
+        
+        \item \textbf{Wykonywanie (Execute):} \\
+        Faktyczne obliczenie przy użyciu jednostki arytmetyczno-logicznej (ALU).
+        
+        \item \textbf{Zapisywanie (Store):} \\
+        Zapisanie wyniku w pamięci lub rejestrze.
+    \end{enumerate}
+\end{frame}
+
+%Analogia do kuchni
+
+\section{Analogia (Kuchnia)}
+
+\begin{frame}{Jak to zrozumieć? Analogia kuchenna}
+    Wyobraźmy sobie komputer jako kuchnię, a procesor jako kucharza.
+    
+    \begin{table}[]
+        \centering
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{Element w kuchni} & \textbf{Odpowiednik w komputerze} \\
+            \midrule
+            Kucharz & \textbf{Procesor (CPU)} \\
+            Przepis & Program / Kod \\
+            Składniki & Dane (np. plik wideo) \\
+            Stół kuchenny & Pamięć RAM \\
+            Szef kuchni & System operacyjny (OS) \\
+            \bottomrule
+        \end{tabular}
+        \caption{Porównanie pracy komputera do gotowania}
+    \end{table}
+
+    \footnotesize
+    \textit{Wniosek: Szybszy kucharz (taktowanie) = szybszy posiłek. Więcej rąk do pracy (rdzenie) = więcej dań naraz.}
+\end{frame}
+
+%Podsumowanie
+
+\section{Podsumowanie}
+
+\begin{frame}{Podsumowanie}
+    \begin{columns}
+        \column{0.6\textwidth}
+        Podsumowując, CPU to najważniejszy element komputera, który:
+        \begin{itemize}
+            \item Działa sekwencyjnie (Pobierz $\to$ Dekoduj $\to$ Wykonaj $\to$ Zapisz).
+            \item Zarządza wszystkimi zadaniami, od pisania tekstu po gry 3D.
+            \item Ściśle współpracuje z pamięcią RAM.
+        \end{itemize}
+        
+        \column{0.4\textwidth}
+        \centering
+        \textbf{Mózg, który nigdy nie śpi!}
+    \end{columns}
+\end{frame}
+
+%Koniec
+
+\begin{frame}{Materiały źródłowe}
+    Prezentację przygotowano w oparciu o:
+    \begin{enumerate}
+        \item Wykład "Technologie informacyjne".
+        \item Materiały własne dotyczące budowy CPU.
+        \item Dokumentacja pakietu \texttt{beamer} oraz styl PWr.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \Huge \textbf{Dziękuję za uwagę!}
+\end{frame}
+
+\end{document}
